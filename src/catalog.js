@@ -12,7 +12,7 @@ function searchProducts(products, query) {
 function sortProductsByPrice(products, direction = 'asc') {
   const multiplier = direction === 'desc' ? -1 : 1;
   return [...products].sort((first, second) => (first.price - second.price) * multiplier);
-} 
+}
 
 function getAvailableProducts(products) {
   return products.filter((product) => product.stock > 0);
