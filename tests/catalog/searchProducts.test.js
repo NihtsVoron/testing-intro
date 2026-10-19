@@ -64,6 +64,4 @@ describe('searchProducts', () => {
     var catalog = searchProducts(products, query).map(x => ({ id: x.id }));
     expect(catalog).toEqual(expectIds);
   });
-
-  test.todo("'\\t\\n' возвращает товары с ID [1, 2, 3, 4, 5, 6]");
 });
